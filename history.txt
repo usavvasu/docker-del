@@ -1,0 +1,1000 @@
+ 1147  cat /home/devops/Downloads/
+ 1148  cat /home/devops/Downloads/akash.pem 
+ 1149  ansible-playbook ec2instance2.yml
+ 1150  ifconfig
+ 1151  cd
+ 1152  cd .ssh
+ 1153  ls
+ 1154  vi id_rsa.pub 
+ 1155  cd 
+ 1156  cd linuxpractices/
+ 1157  cd ansible/
+ 1158  cd project/
+ 1159  sudo vi ec2instance2
+ 1160  sudo vi ec2instance2.yml
+ 1161  sudo vi ec2instance.yml
+ 1162  cd
+ 1163  sudo vi .boto
+ 1164  chmod 777 .boto
+ 1165  sudo vi .boto
+ 1166  chmod 400 .boto
+ 1167  from boto.ec2.connection import EC2Connection
+ 1168  cat .boto 
+ 1169  cd 
+ 1170  cd Downloads/
+ 1171  sudo chmod 400 ansiblecloud.pem 
+ 1172  cd -
+ 1173  ls
+ 1174  cd linuxpractices/
+ 1175  cd ansible/
+ 1176  cd project/
+ 1177  vi ec2instance2.yml
+ 1178  ansible-playbook ec2instance2.yml
+ 1179  vi ec2instance2.yml
+ 1180  ansible-playbook ec2instance2.yml
+ 1181  sudo apt-get install python-boto
+ 1182  ansible-playbook ec2instance2.yml
+ 1183  ssh-keygen
+ 1184  ansible-playbook ec2instance2.yml
+ 1185  sudo apt-get install openssl
+ 1186  ansible-playbook ec2instance2.yml
+ 1187  sudo -H pip2 uninstall pyOpenSSL
+ 1188  sudo pip uninstall pyOpenSSL
+ 1189  sudo -H pip uninstall pyOpenSSL
+ 1190  sudo pip install --upgrade pip
+ 1191  ansible-playbook ec2instance2.yml
+ 1192  ansible-playbook -i ini-dev ec2instance2.yml
+ 1193  vi ec2instance2.yml
+ 1194  ansible-playbook -i ini-dev ec2instance2.yml
+ 1195  vi ec2instance2.yml
+ 1196  ansible-playbook -i ini-dev ec2instance2.yml
+ 1197  vi ec2instance2.yml
+ 1198  ansible-playbook ec2instance2.yml
+ 1199  vi ec2instance2.yml
+ 1200  ansible-playbook ec2instance2.yml
+ 1201  ansible-playbook ec2instance2.yml
+ 1202  vi ec2instance2.yml
+ 1203  scp ec2instance.yml devops@192.168.1.20:/home/devops
+ 1204  vi ec2instance2.yml
+ 1205  pwd
+ 1206  vi ec2instance2.yml
+ 1207  vagrant ssh db
+ 1208  cd ..
+ 1209  cd vagrant/
+ 1210  cd multi-vagrant/
+ 1211  vagrant up
+ 1212  vagrant ssh web
+ 1213  cat Vagrantfile 
+ 1214  vagrant ssh web
+ 1215  cd linuxpractices/
+ 1216  cd ansible/
+ 1217  mkdir -p production/{group_vars/all,host_vars/db,web} 
+ 1218  tree production
+ 1219  rm -rf tree production
+ 1220  tree production
+ 1221  mkdir -p production/{group_vars/all,host_vars/{db,web}} 
+ 1222  tree production
+ 1223  sudo vi int-dev
+ 1224  cd project/
+ 1225  sudo vi int-dev
+ 1226  mkdir -p production/{group_vars/all,host_vars/{db1,web1}} 
+ 1227  tree production
+ 1228  cd production/
+ 1229  ls
+ 1230  cd group_vars/
+ 1231  cd all/
+ 1232  vi var.yml
+ 1233  cd ..
+ 1234  cd host_vars/
+ 1235  cd db1/
+ 1236  vi var.yml
+ 1237  cd ..
+ 1238  cd web1
+ 1239  vi var.yml
+ 1240  cd ..
+ 1241  vi int-dev
+ 1242  ansible -i int-dev -m user -a "name={{ usernsme }} password=12345" newgroup 
+ 1243  vi int-dev
+ 1244  ansible all -i int-dev -m user -a "name={{ usernsme }} password=12345" newgroup 
+ 1245  ansible all -i int-dev -m user -a "name={{ usernsme }} password=12345" --sudo
+ 1246  vi int-dev
+ 1247  ansible all -i int-dev -m user -a "name={{ usernsme }} password=12345" --sudo
+ 1248  ansible -i int-dev -m user -a "name={{ usernsme }} password=12345" webservers
+ 1249  vi int-dev
+ 1250  ansible -i int-dev -m user -a "name={{ usernsme }} password=12345" web
+ 1251  ansible -i int-dev -m user -a "name={{ usernsme }} password=12345" webservers
+ 1252  ansible -i int-dev -m ping all
+ 1253  vi int-dev
+ 1254  ansible -i int-dev -m ping all
+ 1255  vi int-dev
+ 1256  ansible -i int-dev -m ping all
+ 1257  vi int-dev
+ 1258  ansible -i int-dev -m user -a 
+ 1259  ansible -i int-dev -m user -a "name={{ usernsme }} password=12345" webservers
+ 1260  ansible -i int-dev -m user -a "name={{ usernsme }} password=12345" newgroup 
+ 1261  vi int-dev
+ 1262  ansible -i int-dev -m user -a "name={{ username }} password=12345" newgroup 
+ 1263  ls
+ 1264  cd production/group_vars/
+ 1265  ls
+ 1266  cd all/
+ 1267  ls
+ 1268  vi var.yml 
+ 1269  cd ..
+ 1270  clear
+ 1271  ls
+ 1272  ansible -i int-dev -m user -a "name={{ username }} password=12345" newgroup 
+ 1273  cat production/group_vars/all/var.yml 
+ 1274  cat production/host_vars/db1/var.yml 
+ 1275  cat production/host_vars/web1/var.yml 
+ 1276  clear
+ 1277  ansible -i int-dev -m user -a "name={{ username }} password=12345" newgroup 
+ 1278  ansible -i int-dev -m user -a "name={{ username }} password=12345" webservers
+ 1279  cp int-dev production/
+ 1280  cd production/
+ 1281  ansible -i int-dev -m user -a "name={{ username }} password=12345" webservers
+ 1282  ls
+ 1283  cd /etc/ansible/
+ 1284  ls
+ 1285  sudo vim ansible.cfg 
+ 1286  ansible -i int-dev -m user -a "name={{ username }} password=12345" webservers --sudo
+ 1287  cd
+ 1288  cd linuxpractices/ansible/project/production
+ 1289  ansible -i int-dev -m user -a "name={{ username }} password=12345" webservers --sudo
+ 1290  ansible -i int-dev -m user -a "name={{ username }} password=12345" all --sudo
+ 1291  vi int-dev
+ 1292  vi int-dev
+ 1293  ansible -i int-dev -m user -a "name={{ username }} password=12345" all -e username=adhoc --sudo
+ 1294  tar -xvzf linuxpractices.tar
+ 1295  cd linuxpractices/
+ 1296  ls
+ 1297  cd 
+ 1298  ls
+ 1299  tar cvf linuxpractices
+ 1300  tar --help
+ 1301  tar cvf linuxpractices backup.tar.zp
+ 1302  cd linuxpractices/
+ 1303  tar cvf linuxpractices backup.tar.zp
+ 1304  tar cvf linuxpractices backup.tar
+ 1305  tar cvzf linuxpractices backup.tar
+ 1306  tar cvzf linuxpractices backup.gz.tar
+ 1307  tar xvzf linuxpractices backup.gz.tar
+ 1308  tar -xvzf linuxpractices backup.gz.tar
+ 1309  tar --help
+ 1310  tar -cf archive.tar linuxpractices
+ 1311  ls
+ 1312  vi akash 
+ 1313  cd
+ 1314  cd linuxpractices/
+ 1315  cd ansible/
+ 1316  vi copy.yml
+ 1317  ansible-playbook copy.yml
+ 1318  cd project/
+ 1319  ansible-playbook copy.yml
+ 1320  cd ..
+ 1321  vi copy.yml
+ 1322  vi copy
+ 1323  ssh devops@192.168.1.80
+ 1324  cd linuxpractices/
+ 1325  cd ansible/
+ 1326  CD
+ 1327  cd
+ 1328  cd linuxpractices/
+ 1329  cd vagrant/
+ 1330  vagrant up
+ 1331  vagrnt ssh web
+ 1332  vagrant ssh web
+ 1333  vagrant ssh db
+ 1334  vagrant ssh control
+ 1335  vi Vagrantfile 
+ 1336  vagrant ssh web
+ 1337  cd\
+ 1338  cd
+ 1339  vi akash 
+ 1340  ansible -m setup copy.yml
+ 1341  vi int-dev
+ 1342  cd project/
+ 1343  ansible -m setup copy.yml
+ 1344  ls
+ 1345  vi int-dev
+ 1346  ansible -m setup copy.yml
+ 1347  ansible -i int-dev -m setup copy.yml
+ 1348  ansible -i int-dev -m setup web1
+ 1349  ansible -i int-dev -m setup web
+ 1350  vi int-dev
+ 1351  ansible -i int-dev -m setup web01
+ 1352  ansible -i int-dev -m setup web | ansible_cpu
+ 1353  ansible -i int-dev -m setup web -a "filter=ansible_memory_mb"
+ 1354  ansible -i int-dev -m setup web01 -a "filter=ansible_memory_mb"
+ 1355  vi copy.yml
+ 1356  ansible-playbook copy.yml 
+ 1357  vi copy.yml
+ 1358  ansible-playbook copy.yml 
+ 1359  vi copy.yml
+ 1360  ansible-playbook copy.yml 
+ 1361  vi copy.yml
+ 1362  ansible-playbook copy.yml 
+ 1363  vi copy.yml
+ 1364  ansible -i int-dev -m ping web01
+ 1365  ansible-playbook copy.yml 
+ 1366  vi copy.yml
+ 1367  ansible-playbook copy.yml 
+ 1368  vi copy.yml
+ 1369  ansible-playbook copy.yml 
+ 1370  vi copy.yml
+ 1371  ansible-playbook copy.yml 
+ 1372  vi copy.yml
+ 1373  ansible-playbook copy.yml 
+ 1374  vi copy.yml
+ 1375  ansible-playbook copy.yml 
+ 1376  vi copy.yml
+ 1377  ansible-playbook copy.yml 
+ 1378  vi copy.yml
+ 1379  cd ..
+ 1380  mkdir exe1
+ 1381  cd exe1/
+ 1382  vi replace.yml
+ 1383  ansible-plabook -C replace.yml
+ 1384  ansible-playbook -C replace.yml
+ 1385  cd ..
+ 1386  cd project/
+ 1387  vi replce.yml
+ 1388  vi int-dev 
+ 1389  ansible-playbook -C replace.yml
+ 1390  vi replce.yml
+ 1391  ansible-playbook -C replace.yml
+ 1392  ls
+ 1393  ansible-playbook -C replce.yml
+ 1394  vi replce.yml
+ 1395  ansible-playbook replce.yml
+ 1396  vi replce.yml
+ 1397  vi int-dev 
+ 1398  ansible-playbook replce.yml
+ 1399  vi checkhost.yml
+ 1400  ansible-playbook checkhost.yml
+ 1401  vi checkhost.yml
+ 1402  ansible-playbook checkhost.yml
+ 1403  vi checkhost.yml
+ 1404  ansible-playbook checkhost.yml
+ 1405  vi int-dev 
+ 1406  ansible-playbook checkhost.yml
+ 1407  vi checkhost.yml
+ 1408  vagrant reload
+ 1409  vi Vagrantfile 
+ 1410  vagrant reload
+ 1411  vi Vagrantfile 
+ 1412  vagrant reload
+ 1413  vagrant ssh web
+ 1414  vagrant destroy
+ 1415  vagrant reload
+ 1416  vagrant up
+ 1417  vagrant ssh web
+ 1418  vagrant up
+ 1419  vagrant ssh db
+ 1420  vagrant ssh comtrol
+ 1421  vagrant ssh control
+ 1422  vi akash 
+ 1423  exit
+ 1424  cd 
+ 1425  cd l
+ 1426  cd linuxpractices/
+ 1427  cd vagrant/
+ 1428  cd multi-vagrant/
+ 1429  vagrant up
+ 1430  vagrant ssh web
+ 1431  vagrant ssh db
+ 1432  vagrant ssh control
+ 1433  cd linuxpractices/
+ 1434  cd vagrant/
+ 1435  cd multi-vagrant/
+ 1436  vi Vagrantfile 
+ 1437  ls
+ 1438  cd vagrant/
+ 1439  ls
+ 1440  cd ..
+ 1441  vi Vagrantfile 
+ 1442  vagrant reload
+ 1443  vi Vagrantfile 
+ 1444  vagrant reload
+ 1445  cds
+ 1446  cd
+ 1447  clear
+ 1448  ls
+ 1449  cd .ssh/
+ 1450  ls
+ 1451  ifconfig
+ 1452  cd 
+ 1453  ssh devops@192.168.1.171
+ 1454  ssh devops@192.168.1.71
+ 1455  ls
+ 1456  cd training/
+ 1457  ls
+ 1458  cd ansible/
+ 1459  ls
+ 1460  cd project-play/
+ 1461  ls
+ 1462  vi inven 
+ 1463  cd
+ 1464  cd linuxpractices/
+ 1465  cd ansible/
+ 1466  cd project/
+ 1467  ls
+ 1468  cd roles
+ 1469  ls
+ 1470  cd ..
+ 1471  scp -r apache roles.yaml devops@192.168.1.15:/home/devops
+ 1472  ifconfig
+ 1473  ls
+ 1474  scp -r roles devops@192.168.1.15:/home/devops
+ 1475  ssh-copy-id devops@192.168.1.15
+ 1476  clear
+ 1477  ls
+ 1478  zip -r roles.zip roles/
+ 1479  ls
+ 1480  cd roles
+ 1481  ls
+ 1482  vi roles.yaml 
+ 1483  cd ..
+ 1484  vi int-dev 
+ 1485  ssh-copy-id vagrant@192.168.1.65
+ 1486  ansible -m ping all
+ 1487  ansible -m ping web
+ 1488  c
+ 1489  clear
+ 1490  ls
+ 1491  ansible -m ping web01
+ 1492  cat int-dev 
+ 1493  vi int-dev
+ 1494  ansible -m ping web01
+ 1495  ansible -m ping all
+ 1496  ssh-copy-id vagrant@192.168.1.134
+ 1497  ssh-copy-id vagrant@192.168.1.131
+ 1498  ansible -m ping all
+ 1499  vi int-dev
+ 1500  ansible -m ping all
+ 1501  ls
+ 1502  vi replce.yml 
+ 1503  vi users.y
+ 1504  vi users.yaml
+ 1505  vi replce.yml 
+ 1506  ansible-playbook replce.yml --tags packages
+ 1507  vi replce.yml 
+ 1508  ansible-playbook replce.yml --tags package
+ 1509  vi replce.yml 
+ 1510  ansible-playbook replce.yml --tags package
+ 1511  vi replce.yml 
+ 1512  ansible-playbook replce.yml --skip --tags package
+ 1513  ansible-playbook replce.yml --skip--tags package
+ 1514  ansible-playbook replce.yml --skip-tags package
+ 1515  ssh devops@192.168.1.80
+ 1516  ssh devops@192.168.1.3
+ 1517  ssh-copy-id devops@192.168.1.80
+ 1518  ssh-copy-id devops@192.168.1.3
+ 1519  ssh-copy-id vagrant@192.168.1.3
+ 1520  cd
+ 1521  clear
+ 1522  cd linuxpractices/
+ 1523  cd vagrant/
+ 1524  cd multi-vagrant/
+ 1525  vagrant up
+ 1526  vagarnt ssh web
+ 1527  vagrant ssh web
+ 1528  vagrant ssh web
+ 1529  cd
+ 1530  cd linuxpractices/
+ 1531  cd ansible/
+ 1532  cd project/
+ 1533  vi replce.yml 
+ 1534  vi practice.yml
+ 1535  vi replce.yml 
+ 1536  vi practice.yml
+ 1537  cd ..
+ 1538  cd vagrant/
+ 1539  mkdir m-vagrant
+ 1540  cd m-vagrant/
+ 1541  vi Vagrantfile
+ 1542  vagrant reload
+ 1543  vagrant up
+ 1544  vi Vagrantfile
+ 1545  vagrant reload
+ 1546  vagrant up
+ 1547  vi Vagrantfile
+ 1548  cd
+ 1549  cd linuxpractices/
+ 1550  cd vagrant/
+ 1551  mkdir control_home
+ 1552  cd m-vagrant/
+ 1553  vagrant up
+ 1554  sudo apt-get update
+ 1555  sudo apt-get install -y curl openssh-server ca-certificates
+ 1556  sudo apt-get install -y postfix
+ 1557  curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+ 1558  sudo EXTERNAL_URL="http://gitlab.example.com" apt-get install gitlab-ee
+ 1559  sudo apt-get install openssh-server postfix 
+ 1560  curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+ 1561  apt-get install gitlab-ce -y
+ 1562  sudo apt-get install gitlab-ce -y
+ 1563  curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+ 1564  sudo apt-get install gitlab-ce -y
+ 1565  apt-get install gitlab-ce -y
+ 1566  sudo apt-get install gitlab-ce -y
+ 1567  sudo rm -rf /var/lib/apt/lists/*
+ 1568  sudo apt-get update
+ 1569  sudo apt-get clean
+ 1570  sudo apt-get install gitlab-ce
+ 1571  deb https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu/ xenial main
+ 1572  eb-src https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu/ xenial main
+ 1573  /etc/apt/sources.list.d
+ 1574  cd /etc/apt/sources.list.d
+ 1575  ls
+ 1576  apt-cache search gilab-ce
+ 1577  cd
+ 1578  apt-cache search gilab-ce
+ 1579  sudo apt-get install gitlab-ce
+ 1580  udo dpkg -i gitlab-ce_9.3.0-ce.0_amd64.deb
+ 1581  sudo dpkg -i gitlab-ce_9.3.0-ce.0_amd64.deb
+ 1582  sudo gitlab-ctl reconfigure
+ 1583  sudo nano /etc/apt/sources.list.d/gitlab_gitlab-ce.list.save
+ 1584  sudo nano /etc/apt/sources.list.d/gitlab_gitlab-ce.list
+ 1585  # apt-cache search gitlab-ce
+ 1586  apt-cache search gitlab-ce
+ 1587  sudo apt-get install gitlab-ce
+ 1588  apt-get update
+ 1589  sudo apt-get install gitlab-ce
+ 1590  curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
+ 1591  sudo apt-get install gitlab-ce
+ 1592  .cat /etc/apt/sources.list.d/gitlab_gitlab-ce.list
+ 1593  sudo apt-get install gitlab-ce
+ 1594  vi  /etc/apt/sources.list.d/gitlab_gitlab-ce.list
+ 1595  sudo vi  /etc/apt/sources.list.d/gitlab_gitlab-ce.list
+ 1596  sudo apt-get install gitlab-ce
+ 1597  cd linuxpractices/
+ 1598  cd ansible/
+ 1599  cd project/
+ 1600  vi practice.yml 
+ 1601  vi int-dev 
+ 1602  ansible-playbopok practice.yml 
+ 1603  ansible-playbook practice.yml 
+ 1604  vi practice.yml 
+ 1605  ansible-playbook practice.yml 
+ 1606  cd 
+ 1607  cd linuxpractices/
+ 1608  cd vagrant/
+ 1609  vagrant ssh web
+ 1610  vagrant up
+ 1611  cd multi-vagrant/
+ 1612  vagrant up
+ 1613  vagrant ssh web
+ 1614  vagrant ssh db01
+ 1615  cd
+ 1616  cd linuxpractices/
+ 1617  cd ansible/
+ 1618  cd vms/
+ 1619  vagrant ssh lb02
+ 1620  mkdir templates
+ 1621  cd templates/
+ 1622  sudo vi nginx.conf.j2
+ 1623  cd ..
+ 1624  sudo vi nginx.conf.j2
+ 1625  cd templates/
+ 1626  sudo vi nginx.conf.j2
+ 1627  cd ..
+ 1628  vagrant halt
+ 1629  cd 
+ 1630  cd linuxpractices/
+ 1631  cd ansible/
+ 1632  mkdir control_home
+ 1633  mkdir ansible_pro
+ 1634  cd ansible_pro/
+ 1635  mkdir ansible_pro
+ 1636  mkdir control_home
+ 1637  mkdir control_repo
+ 1638  mkdir vms
+ 1639  ls
+ 1640  rm -rf ansible_pro/
+ 1641  ls
+ 1642  pwd
+ 1643  cd vms/
+ 1644  ls
+ 1645  vagrant up
+ 1646  vagrant ssh control
+ 1647  vagrant ssh lb01
+ 1648  vagrant ssh app01
+ 1649  vagrant ssh app02
+ 1650  vagrant ssh db01
+ 1651  vagrant ssh control
+ 1652  cd
+ 1653  ls
+ 1654  scp ansble vagrant@192.168.2.35://home/vagrant/repo/ansible
+ 1655  scp ansble vagrant@192.168.2.35:/home/vagrant/repo/ansible
+ 1656  scp ansible vagrant@192.168.2.35:/home/vagrant/repo/ansible
+ 1657  scp -r ansible vagrant@192.168.2.35:/home/vagrant/repo/ansible
+ 1658  scp -r ansible vagrant@192.168.2.35:/home/vagrant
+ 1659  ls
+ 1660  cd ansible/
+ 1661  ls
+ 1662  scp database.yml webserver.yml control.yml loadbalancer.yml vagrant@192.168.2.35:/home/vagrant
+ 1663  ls
+ 1664  sudo vi loadbalancer.yml 
+ 1665  sudo vi control.yml 
+ 1666  ls
+ 1667  sudo vi database.yml 
+ 1668  sudo vi webserver.yml 
+ 1669  ls
+ 1670  scp -r visualapp/ vagrant@192.168.2.35:/home/vagrant/repo/ansible
+ 1671  cd ..
+ 1672  ls
+ 1673  cd ansible/
+ 1674  ls
+ 1675  cd ..
+ 1676  cd linuxpractices/ansible/
+ 1677  ls
+ 1678  cd control_home/
+ 1679  ls
+ 1680  cd ..
+ 1681  cd ansible_pro/
+ 1682  ls
+ 1683  cd control_home/
+ 1684  ls
+ 1685  cd ..
+ 1686  cp /home/devops/ansible/visualapp/ /home/devops/linuxpractices/ansible/ansible_pro/control_home/
+ 1687  cp -prf /home/devops/ansible/visualapp/ /home/devops/linuxpractices/ansible/ansible_pro/control_home/
+ 1688  cd control_home/
+ 1689  ls
+ 1690  cd ansible/
+ 1691  ls
+ 1692  cd 
+ 1693  cd linuxpractices/ansible/ansible_pro/control_home/ansible
+ 1694  cd ..
+ 1695  ls
+ 1696  cp -prf visualapp/ ansible/
+ 1697  cd ..
+ 1698  ls
+ 1699  cd vms/
+ 1700  ls
+ 1701  vagrant ssh app01
+ 1702  vagrant ssh lb01
+ 1703  vagrant ssh control
+ 1704  cd linuxpractices/
+ 1705  cd vagrant/
+ 1706  ls
+ 1707  cd m-vagrant/
+ 1708  vagrant up
+ 1709  ls
+ 1710  mv Vagrantfile /home/devops/linuxpractices/ansible/ansible_pro/vms
+ 1711  ls
+ 1712  cd ..
+ 1713  cd ansible/
+ 1714  cd ansible_pro/
+ 1715  ls
+ 1716  cd vms/
+ 1717  cat Vagrantfile 
+ 1718  ifconfig
+ 1719  cd
+ 1720  pwd
+ 1721  ls
+ 1722  cd ansible/
+ 1723  ls
+ 1724  vi install.sh 
+ 1725  cd 
+ 1726  cd linuxpractices/
+ 1727  cd ansible/
+ 1728  cd ansible_pro/
+ 1729  cd vms/
+ 1730  vagrant halt
+ 1731  vagrant up
+ 1732  vi Vagrantfile 
+ 1733  vagrant reload
+ 1734  vagrant halt
+ 1735  vagrant up
+ 1736  vagrant ssh control
+ 1737  exit
+ 1738  cd linuxpractices/\
+ 1739  cd linuxpractices/
+ 1740  cd ansible/
+ 1741  cd ansible_pro/
+ 1742  ls
+ 1743  cd vms/
+ 1744  vagrant up
+ 1745  vagrant ssh control
+ 1746  vagrant up control
+ 1747  vagrant ssh control
+ 1748  ifconfig
+ 1749  sudo apt-get install nmap
+ 1750  nmap 192.168.2.36
+ 1751  nmap 192.168.2.37
+ 1752  nmap 192.168.2.39
+ 1753  nmap lb01
+ 1754  cd linuxpractices/
+ 1755  ls
+ 1756  cd ansible_pro/
+ 1757  cd vms/
+ 1758  vagrant up
+ 1759  vagrant ssh control
+ 1760  vagrant ssh lb01
+ 1761  vagrant ssh control
+ 1762  cd linuxpractices/
+ 1763  cd ansible/
+ 1764  ls
+ 1765  cd project/
+ 1766  ls
+ 1767  ansible --version
+ 1768  ansible -doc -l
+ 1769  ansible -doc-l
+ 1770  ansible-doc-l
+ 1771  ansible-doc -l
+ 1772  cd Downloads/
+ 1773  ls
+ 1774  ssh -i "JENKINS.pem" ubuntu@ec2-54-202-207-237.us-west-2.compute.amazonaws.com
+ 1775  chmod JENKINS.pem 
+ 1776  chmod 400 JENKINS.pem 
+ 1777  ssh -i "JENKINS.pem" ubuntu@ec2-54-202-207-237.us-west-2.compute.amazonaws.com
+ 1778  cd Downloads/
+ 1779  ssh -i "JENKINS.pem" ubuntu@ec2-54-202-207-237.us-west-2.compute.amazonaws.com
+ 1780  sudo -i
+ 1781  sudo apt-get update
+ 1782  sudo -i
+ 1783  ping 8.8.8.8
+ 1784  clear
+ 1785  sudo apt-get install     apt-transport-https     ca-certificates     curl     software-properties-common
+ 1786  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+ 1787  sudo apt-key fingerprint 0EBFCD88
+ 1788  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+ 1789     $(lsb_release -cs) \
+ 1790     stable"
+ 1791  sudo apt-get update
+ 1792  ping 8.8.8.8
+ 1793  clear
+ 1794  sudo docker pull ubuntu:latest
+ 1795  clear
+ 1796  sudo docker images
+ 1797  clear
+ 1798  sudo docker run -it ubuntu /bin/bash
+ 1799  sudo docker ps
+ 1800  sudo docker ps -a
+ 1801  sudo docker rm 8bf900dbaa52 409af4009efd 3cd3c2c7c025 375dab3f5f7a de7d9882a152 a751e5d1b27e 79e3ded81f7b 740652848d4a
+ 1802  clear
+ 1803  sudo docker ps -a
+ 1804  sudo docker run -it ubuntu --name interstellar /bin/bash 
+ 1805  sudo docker run --name interstellar -it ubuntu /bin/bash 
+ 1806  docker ps
+ 1807  sudo docker ps
+ 1808  clear
+ 1809  sudo docker attach 7fede5c8ae9f
+ 1810  sudo docker ps
+ 1811  sudo docker exec 7fede5c8ae9f ls /etc
+ 1812  sudo docker exec 7fede5c8ae9f ls /
+ 1813  sudo docker exec 7fede5c8ae9f touch /test123
+ 1814  sudo docker exec 7fede5c8ae9f ls -l /test123
+ 1815  clear
+ 1816  sudo docker exec -it 7fede5c8ae9f /bin/bash
+ 1817  sudo docker ps
+ 1818  sudo docker stop interstellar
+ 1819  sudo docker ps
+ 1820  sudo docker ps -a
+ 1821  clear
+ 1822  sudo docker start interstellar
+ 1823  sudo docker ps -a
+ 1824  sudo docker ps 
+ 1825  sudo docker stop interstellar
+ 1826  sudo docker rm interstellar
+ 1827  clear
+ 1828  docker ps -a
+ 1829  sudo docker ps -a
+ 1830  sudo docker start d57567e21c77
+ 1831  docker ps
+ 1832  docker pssudo 
+ 1833  clear
+ 1834  sudo docker ps
+ 1835  sudo docker images
+ 1836  sudo docker rmi ubuntu:latest
+ 1837  clear
+ 1838  sudo docker run -p 8070:8080 -p 50000:50000 jenkins
+ 1839  ]
+ 1840  sudo docker ps
+ 1841  mkdir jenkins_home_dir
+ 1842  docker run -p 8080:8080 -p 50000:50000 -v jenkins_home_dir:/var/jenkins_home jenkins
+ 1843  sudo docker run -p 8080:8080 -p 50000:50000 -v jenkins_home_dir:/var/jenkins_home jenkins
+ 1844  sudo docker ps -a
+ 1845  sudo docker rm 5f6eec3ab4c7 f230c1e30b9a
+ 1846  sudo docker run -p 8080:8080 -p 50000:50000 -v jenkins_home_dir:/var/jenkins_home jenkins
+ 1847  sudo netstat -antp | grep 8080
+ 1848  ps -ef | grep 2650
+ 1849  sudo kill -9 2650
+ 1850  sudo docker run -p 8080:8080 -p 50000:50000 -v jenkins_home_dir:/var/jenkins_home jenkins
+ 1851  clear
+ 1852  sudo docker inspect jenkins:latest
+ 1853  sudo docker ps
+ 1854  sudo docker inspect f230c1e30b9a
+ 1855  ifconfig 
+ 1856  ping 172.17.0.3
+ 1857  sudo docker ps
+ 1858  sudo docker stop f230c1e30b9a
+ 1859  sudo docker ps
+ 1860  ls jenkins_home_dir/
+ 1861  ls
+ 1862  cd jenkins_home_dir/
+ 1863  ls
+ 1864  ls -a
+ 1865  cd ..
+ 1866  ls
+ 1867  clear
+ 1868  cd /var/
+ 1869  ls
+ 1870  csd
+ 1871  cd
+ 1872  clear
+ 1873  ls jenkins_home_dir/
+ 1874  ls jenkins_home_dir/ -a
+ 1875  docker
+ 1876  clear
+ 1877  ifconfig 
+ 1878  docker images
+ 1879  sudo docker images
+ 1880  clear
+ 1881  docker images
+ 1882  sudo docker images
+ 1883  sudo docker rmi ubuntu
+ 1884  sudo docker rmi tomcat
+ 1885  clear
+ 1886  cd /tmp/
+ 1887  mkdir dockerfiles
+ 1888  cd dockerfiles/
+ 1889  vi Dockerfile
+ 1890  docker build -t mygitimg .
+ 1891  sudo docker build -t mygitimg .
+ 1892  docker imagtes
+ 1893  docker images
+ 1894  sudo docker images
+ 1895  sudo docker inspect mygitimg
+ 1896  ls
+ 1897  git
+ 1898  git clone https://github.com/wkhanvisualpathit/VProfile.git
+ 1899  git checkout vp-docker
+ 1900  ls
+ 1901  cd VProfile/
+ 1902  git checkout vp-docker
+ 1903  ls
+ 1904  cd Docker-web/
+ 1905  ls
+ 1906  cd ..
+ 1907  ls
+ 1908  mvn --version
+ 1909  mvn install
+ 1910  ls
+ 1911  ls target/
+ 1912  ls target/vprofile-v1.war 
+ 1913  ls
+ 1914  cp Docker-web/Dockerfile .
+ 1915  ls
+ 1916  cat Dockerfile 
+ 1917  docker build -t visualpath/vprotom:1.5 .
+ 1918  sudo docker build -t visualpath/vprotom:1.5 .
+ 1919  docker images
+ 1920  sudo docker images
+ 1921  sudo docker inspect visualpath/vprotom
+ 1922  sudo docker inspect visualpath/vprotom:1.5
+ 1923  docker run -p 8040:8080 -d visualpath/vprotom:1.5
+ 1924  sudo docker run -p 8040:8080 -d visualpath/vprotom:1.5
+ 1925  docker ps
+ 1926  sudo docker ps
+ 1927  ls
+ 1928  cd Docker-db/
+ 1929  ls
+ 1930  cat Dockerfile 
+ 1931  docker login
+ 1932  sudo docker login
+ 1933  docker images
+ 1934  sudo docker images
+ 1935  sudo docker push visualpath/vprotom
+ 1936  docker ps
+ 1937  sudo docker ps
+ 1938  sudo docker run -d --name myvpro -P visualpath/vprotom:1.5
+ 1939  sudo docker ps
+ 1940  clear
+ 1941  sudo docker ps
+ 1942  sudo docker port 4a5d80617b39
+ 1943  cd
+ 1944  cd /tmp/dockerfiles/
+ 1945  ls
+ 1946  rm -rf VProfile/
+ 1947  git clone https://github.com/wkhanvisualpathit/VProfile.git
+ 1948  cd VProfile/
+ 1949  mvn install
+ 1950  ls
+ 1951  git checkout vp-docker
+ 1952  ls
+ 1953  cp Docker-web/Dockerfile .
+ 1954  ls
+ 1955  docker build -t newvprotom:latest .
+ 1956  sudo docker build -t newvprotom:latest .
+ 1957  docker login
+ 1958  sudo docker login
+ 1959  sudo docker build -t visualpath/newvprotom:latest .
+ 1960  sudo docker push visualpath/newvprotom:latest
+ 1961  sudo docker images
+ 1962  sudo docker run -d --name myvprocont -P visualpath/newvprotom
+ 1963  sudo docker ps
+ 1964  history
+ 1965  sudo docker ps
+ 1966  sudo docker exec -it myvprocont /bin/bash
+ 1967  history
+ 1968  ls
+ 1969  rm akash
+ 1970  ls
+ 1971  sudo vi /etc/group
+ 1972  docker images
+ 1973  id devops
+ 1974  sudo vi /etc/group
+ 1975  sudo docker run -it --net qa ubuntu /bin/bash
+ 1976  docker images
+ 1977  ifconfig 
+ 1978  docker network ls
+ 1979  docker network create new
+ 1980  id 
+ 1981  sudo docker network create new
+ 1982  usermod -aG docker devops
+ 1983  sudo usermod -aG docker devops
+ 1984  id devops
+ 1985  sudo docker network create new
+ 1986  docker network create new
+ 1987  docker network create qa
+ 1988  sudo docker network create qa
+ 1989  sudo docker network ls
+ 1990  docker run -d --name search --net qa elasticsearch
+ 1991  sudo docker run -it alpine sh
+ 1992  w
+ 1993  docker run -it --net qa alpine /bin/bash
+ 1994  sudo docker run -it --net qa alpine /bin/bash
+ 1995  sudo ps -ef | grep docker
+ 1996  sudo kill -9 1611 2431 10211 10485
+ 1997  sudo ps -ef | grep docker
+ 1998  sudo kill -9 11054 11062
+ 1999  sudo ps -ef | grep docker
+ 2000  sudo kill 11357 11378
+ 2001  sudo ps -ef | grep docker
+ 2002  sudo docker run -it --net qa alpine /bin/bash
+ 2003  sudo docker ps
+ 2004  sudo docker ps -a
+ 2005  sudo docker rm 8efa53f80eea
+ 2006  sudo docker run -it --net qa alpine /bin/bash
+ 2007  sudo docker ps -a
+ 2008  sudo docker ps -a | grep alpine
+ 2009  sudo docker ps --all -q -f status=exited
+ 2010  sudo docker ps -a
+ 2011  sudo docker ps --all -q -f status=exited
+ 2012* sudo docker rm dd142f15452e 
+ 2013  sudo docker ps -a
+ 2014  sudo docker ps --all -q -f status=created
+ 2015  sudo docker rm $(docker ps --all -q -f status=created)
+ 2016  sudo docker ps -a
+ 2017  sudo docker images
+ 2018  sudo dockier rmi alpine
+ 2019  sudo docker rmi alpine
+ 2020  clear
+ 2021  sudo docker run -it --net qa alpine sh
+ 2022  sudo docker run -d --name search --net qa elasticsearch
+ 2023  sudo docker run -it --net qa alpine sh
+ 2024  docker inspect search
+ 2025  clear
+ 2026  cd /tmp/
+ 2027  git clone https://github.com/wkhanvisualpathit/VProfile.git
+ 2028  cd VProfile/
+ 2029  ls
+ 2030  git checkout vp-docker
+ 2031  ls
+ 2032  cd Docker-db/
+ 2033  ls
+ 2034  cat Dockerfile 
+ 2035  cp Dockerfile ../
+ 2036  cd ..
+ 2037  ls
+ 2038  cat Dockerfile 
+ 2039  docker build -t visualpath/myvprodbimg:V19 .
+ 2040  docker images
+ 2041  docker run --name vprodb -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=vprodbpass visualpath/vprodb:V19
+ 2042  sudo docker run -d --name vprodb  -p 3306:3306 -e MYSQL_ROOT_PASSWORD=vprodbpass visualpath/vprodb:V19
+ 2043  sudo docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=vprodbpass --name vprodb visualpath/vprodb:V19
+ 2044  sudo docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=vprodbpass --name vprodb visualpath/vprodb:V19
+ 2045  sudo docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=vprodbpass --name vprodb visualpath/myvprodbimg:V19
+ 2046  sudo netstat -antp | grep 3306
+ 2047  sudo service mysql stop
+ 2048  sudo apt purge mysql
+ 2049  sudo apt purge mysql*
+ 2050  sudo docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=vprodbpass --name vprodb visualpath/myvprodbimg:V19
+ 2051  sudo docker ps -a
+ 2052  sudo docker rm 2bb22076d689
+ 2053  clear
+ 2054  sudo docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=vprodbpass --name vprodb visualpath/myvprodbimg:V19
+ 2055  sudo docker ps
+ 2056  docker run --name vprofileapp --link vprodb:mysql -d -p 7070:8080 visualpath/vprofileapp:V10
+ 2057  sudo docker run --name vprofileapp --link vprodb:mysql -d -p 7070:8080 visualpath/vprofileapp:V10
+ 2058  sudo docker images
+ 2059  sudo docker run --name vprofileapp --link vprodb:mysql -d -p 7070:8080 visualpath/newvprotom
+ 2060  sudo docker ps
+ 2061  sudo docker exec -it 16c18ea3dec5 /bin/bash
+ 2062  sudo docker ps
+ 2063  sudo docker stop 16c18ea3dec5
+ 2064  sudo docker rm 16c18ea3dec5
+ 2065  ls
+ 2066  git checkout master
+ 2067  ls
+ 2068  cat src/main/resources/application.properties 
+ 2069  git checkout vp-docker
+ 2070  cat src/main/resources/application.properties 
+ 2071  ls
+ 2072  cp Docker-web/Dockerfile .
+ 2073  cat Docker
+ 2074  cat Dockerfile 
+ 2075  sudo docker build -t visualpath/vproappdock:latest .
+ 2076  mvn install
+ 2077  sudo docker build -t visualpath/vproappdock:latest .
+ 2078  sudo docker run --name vprofileapp --link vprodb:mysql -d -p 7070:8080 visualpath/vproappdock
+ 2079  sudo docker exec -it vprofileapp /bin/bash
+ 2080  sudo docker ps
+ 2081  cd /tmp/
+ 2082  git clone https://github.com/jpetazzo/namer
+ 2083  ls -ltr
+ 2084  cd namer/
+ 2085  ls
+ 2086  cat Dockerfile 
+ 2087  docker build -t visualpath/namer .
+ 2088  docker run -d -v $(pwd):/src -p 8090:9292 visualpath/namer
+ 2089  sudo docker run -d -v $(pwd):/src -p 8090:9292 visualpath/namer
+ 2090  sudo docker ps
+ 2091  sudo docker stop e8e95ae87432
+ 2092  sudo docker rm e8e95ae87432
+ 2093  sudo docker run -d -v $(pwd):/src -p 8090:9292 visualpath/namer
+ 2094  ls
+ 2095  vi company_name_generator.rb 
+ 2096  cd ..
+ 2097  mkdir compose
+ 2098  cd compose/
+ 2099  sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+ 2100  sudo chmod +x /usr/local/bin/docker-compose
+ 2101  docker-compose --help
+ 2102  vi docker-compose.yml
+ 2103  cat docker-compose.yml 
+ 2104  sudo docker images
+ 2105  vi docker-compose.yml 
+ 2106  docker-compose up
+ 2107  vi docker-compose.yml 
+ 2108  docker-compose up
+ 2109  vi docker-compose.yml 
+ 2110  docker-compose up
+ 2111  vi docker-compose.yml 
+ 2112  docker-compose up
+ 2113  vi docker-compose.yml 
+ 2114  docker-compose up
+ 2115  vi docker-compose.yml 
+ 2116  docker-compose up
+ 2117  vi docker-compose.yml 
+ 2118  docker-compose up
+ 2119  vi docker-compose.yml 
+ 2120  docker-compose up
+ 2121  vi docker-compose.yml 
+ 2122  cd ..
+ 2123  vi docker-compose.yml
+ 2124  docker-compose up
+ 2125  vi docker-compose.yml
+ 2126  rm docker-compose.yml 
+ 2127  vi docker-compose.yml
+ 2128  docker-compose up
+ 2129  sudo docker images
+ 2130  vi docker-compose.yml
+ 2131  docker-compose up
+ 2132  sudo docker ps
+ 2133  sudo docker stop e340c419d7f8
+ 2134  sudo docker rm e340c419d7f8
+ 2135  sudo docker stop 350c231af113
+ 2136  sudo docker rm 350c231af113
+ 2137  clear
+ 2138  docker-compose up
+ 2139  docker-compose --help
+ 2140  cat docker-compose.yml 
+ 2141  history
+ 2142  cd
+ 2143  ls
+ 2144  git clone https://github.com/imranteli/docker-del.git
+ 2145  cd docker-del/
+ 2146  history > ~/docker-del/history.txt
